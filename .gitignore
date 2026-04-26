@@ -1,7 +1,7 @@
 data/
 mlruns/
 notebooks/
-.ipynb
-.keras
+*.ipynb
+*.keras
 model_summary.txt
-.pkl
+*.pkl
