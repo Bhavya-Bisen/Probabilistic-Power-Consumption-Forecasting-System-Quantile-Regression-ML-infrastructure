@@ -1,0 +1,22 @@
+FROM tensorflow/tensorflow:2.15.0-gpu
+
+WORKDIR /workspace
+
+COPY requirements.txt .
+
+# Create virtual environment
+RUN apt-get update && apt-get install -y python3-venv
+RUN python -m venv /opt/venv
+
+# Activate venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+#Cleaner logs
+ENV TF_CPP_MIN_LOG_LEVEL=2
+
+CMD ["bash"]
