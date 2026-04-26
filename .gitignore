@@ -1,0 +1,22 @@
+# Data & artifacts
+data/
+mlruns/
+artifacts/
+
+# Notebooks
+*.ipynb
+
+# Models
+*.keras
+*.h5
+
+# Serialized data
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+
+# Misc
+model_summary.txt
+.env
