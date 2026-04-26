@@ -1,2 +1,9 @@
-scipy
-PyYAML
+tensorflow==2.15.0
+mlflow==2.11.1
+protobuf>=3.20.3,<5.0.0
+numpy
+matplotlib
+pandas
+scikit-learn
+seaborn
+tqdm
