@@ -1,7 +1,0 @@
-data/
-mlruns/
-notebooks/
-*.ipynb
-*.keras
-model_summary.txt
-*.pkl
